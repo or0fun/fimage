@@ -6,9 +6,19 @@
 
     compile 'com.baiwanlu.android:fimage:1.0.0"
 
-## 首先在application的oncreate里调用
+## 首先在application的onCreate里调用
 
-    FImageView.init(this);
+    /**
+    * Created by benren.fj on 6/11/16.
+    */
+    public class MainApplication extends Application {
+       @Override
+       public void onCreate() {
+          super.onCreate();
+
+          FImageView.init(this);
+        }
+    }
     
 ## 使用简单示例
 
