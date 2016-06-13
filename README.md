@@ -22,7 +22,7 @@
     imageView.setImageUrl("http://t.cn/R5JfqHu");
         
 
-### FImageView   普通普通
+### FImageView   普通图片
 
     //直接设置url，其他都不用管
     public void setImageUrl(String url);
