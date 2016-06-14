@@ -44,19 +44,13 @@
     public static void clearMemoryCaches();
 
     //静态方法，用来手动清除文件里的缓存
-    public static void clearDiskCaches() {
-        FrescoImageView.clearDiskCaches();
-    }
+    public static void clearDiskCaches();
     
     //静态方法，用来手动清除所有缓存
-    public static void clearCaches() {
-        FrescoImageView.clearCaches();
-    }
+    public static void clearCaches();
 
     //静态方法，初始化，放在application的oncreate里 
-    public static void init(Context context) {
-        FrescoImageView.init(context);
-    }
+    public static void init(Context context);
 
 ### FCircleImageView  圆形图片
 
