@@ -9,7 +9,11 @@ import android.graphics.drawable.Drawable;
 public interface IFImageView {
     void setImageUrl(String url);
 
+    void setImageUrl(String url, IFImageLoadListener loadListener);
+
     void setImageUrl(String url, int width, int height);
+
+    void setImageUrl(String url, int width, int height, IFImageLoadListener loadListener);
 
     void setFailureImage();
 
@@ -18,5 +22,7 @@ public interface IFImageView {
     void placeholderImage(Drawable drawable);
 
     void setImageRes(int resId);
+
+    void setImageRes(int resId, IFImageLoadListener loadListener);
 
 }
