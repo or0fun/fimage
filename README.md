@@ -4,7 +4,7 @@
 
 ## gradle 依赖
 
-    compile 'com.baiwanlu.android:fimage:1.0.0"
+    compile 'com.baiwanlu.android:fimage:1.0.1"
 
 ## 首先在application的onCreate里调用
 
@@ -29,7 +29,7 @@
         
         
     FImageView imageView = (FImageView) findViewById(R.id.demo_image_view);
-    imageView.setImageUrl("http://t.cn/R5JfqHu");
+    imageView.setImageUrl("http://t.cn/R5JfqHu");//还可以增加加载监听IFImageLoadListener
         
 
 ### FImageView   普通图片
