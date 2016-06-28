@@ -22,4 +22,4 @@ dependencies {
     compile 'com.facebook.fresco:fresco:0.10.0'
 }
 
-apply from: 'bintrayupload.gradle'
+apply from: 'https://raw.githubusercontent.com/or0fun/android/master/bintrayupload.gradle'
