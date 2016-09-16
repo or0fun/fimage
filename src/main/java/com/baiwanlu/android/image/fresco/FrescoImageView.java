@@ -36,6 +36,7 @@ public class FrescoImageView extends SimpleDraweeView implements IFImageView {
     GenericDraweeHierarchyBuilder builder;
     GenericDraweeHierarchy hierarchy;
     IFImageLoadListener loadListener;
+    boolean enableWrapContent;
 
     public FrescoImageView(Context context, GenericDraweeHierarchy hierarchy) {
         super(context, hierarchy);
@@ -147,6 +148,11 @@ public class FrescoImageView extends SimpleDraweeView implements IFImageView {
         setImageRes(resId);
     }
 
+    @Override
+    public void setWrapContentEnable(boolean enable) {
+        enableWrapContent = enable;
+    }
+
     public static void clearMemoryCaches() {
         ImagePipeline imagePipeline = Fresco.getImagePipeline();
         imagePipeline.clearMemoryCaches();
@@ -183,6 +189,9 @@ public class FrescoImageView extends SimpleDraweeView implements IFImageView {
             }
             if (null != loadListener) {
                 loadListener.onSuccess(id, imageInfo.getWidth(), imageInfo.getHeight());
+            }
+            if (enableWrapContent) {
+                setAspectRatio((float) imageInfo.getWidth() / imageInfo.getHeight());
             }
         }
 

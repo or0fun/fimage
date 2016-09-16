@@ -52,6 +52,11 @@ public class FImageView extends FrescoImageView {
         super.setImageRes(resId);
     }
 
+    @Override
+    public void setWrapContentEnable(boolean enable) {
+        super.setWrapContentEnable(enable);
+    }
+
     public static void clearMemoryCaches() {
         FrescoImageView.clearMemoryCaches();
     }

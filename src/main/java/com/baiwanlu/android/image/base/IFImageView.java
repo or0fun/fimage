@@ -25,4 +25,11 @@ public interface IFImageView {
 
     void setImageRes(int resId, IFImageLoadListener loadListener);
 
+    /**
+     * 设置图片自适应宽高
+     * 适用场景：宽和高 都可以是 WRAP_CONTENT，但是不能为 0
+     *
+     * @param enable 是否自适应
+     */
+    void setWrapContentEnable(boolean enable);
 }
