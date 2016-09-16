@@ -4,7 +4,7 @@
 
 ## gradle 依赖
 
-    compile 'com.baiwanlu.android:fimage:1.0.2"
+    compile 'com.baiwanlu.android:fimage:1.0.3"
 
 ## 首先在application的onCreate里调用
 
